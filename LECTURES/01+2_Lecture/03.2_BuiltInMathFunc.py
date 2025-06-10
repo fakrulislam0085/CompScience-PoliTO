@@ -2,7 +2,7 @@ x = 8578
 y = -12.45
 z = -69.78412357197488
 
-c = abs(x)  #abs() func transforms a negtavie value to a positive value
+c = abs(x)  #abs() func transforms a negative value to a positive value
 d = abs(y)
 e = round(y)    #round(value) func gives us the rounded value
 f = round(z, 3)     #round(value, n) func gives us the value with 3 place rounded
