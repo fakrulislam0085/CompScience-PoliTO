@@ -1,5 +1,5 @@
 from math import sqrt       #imports sqrt, sin, cos, tan function 
-from math import *          #imports all functions
+from math import *          #imports all math functions
 x = 36
 y = sqrt(x)
 print("The square root of 36 is: ", y)
