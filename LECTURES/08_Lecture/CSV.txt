@@ -1,0 +1,8 @@
+ID,Surname,Name,Score
+262062,McGill,Jimmy,30
+274742,Wexler,Kim,23
+285318,Pinkman,Jesse,27
+293372,White,Skyler,18 
+295644,Fring,Gus,24
+295880,Schrader,Marie,30
+298624,Ehrmantraut,Mike,29
