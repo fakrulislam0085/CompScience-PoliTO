@@ -2,7 +2,7 @@
 
 # 📚 Welcome to the CompScience-PoliTO Repository!
 
-This repository is a comprehensive resource for the **Computer Science** course (Code: 07JCJLM, 8 CFU), part of the Bachelor’s Degree in Computer Engineering, First Semester, First Year, Academic Year **2024–2025**, at **Politecnico di Torino**. It contains meticulously organized coursework, including lecture materials, lab exercises, and exam questions, designed to help fellow students excel in the course.
+Read the about section please! Now, This repository contains meticulously organized coursework, including lecture materials, lab exercises, and exam questions, designed to help fellow students excel in the course.
 
 This repository is created to **help fellow students easily navigate, learn, and pass** the course — whether you’re prepping for labs, reviewing lectures, or tackling past exam questions.
 
@@ -71,12 +71,11 @@ This repository is designed to be a one-stop resource for Computer Science stude
 **Clone the Repository:**  
 ```bash
 git clone https://github.com/fakrulislam0085/CompScience-PoliTO.git
+
 Navigate the Directories:
 
 Explore the Labs/ folder for hands-on exercises
-
 Check the Lectures/ folder for theoretical content and code
-
 Dive into the Exam Questions/ folder for exam preparation
 
 👉 Contribute
@@ -88,23 +87,11 @@ Fakrul Islam (Arif)
 📍 Computer Engineering Student @ PoliTO
 📬 Email: fakrulislam0085@gmail.com
 🔗 LinkedIn: linkedin.com/in/fakrul-islam-08
-📸 IG (study/life): @lifeatpolito
-💖 IG (personal): @fakhrulislam.arif
+📸 IG (study/life): https://www.instagram.com/lifeatpolito/
+💖 IG (personal): https://www.instagram.com/fakhrulislam.arif
 
 🙌 Contributing
 Contributions are welcome! If you have additional notes, solutions, or resources to share, please:
-
-Fork the repository
-
-Create a new branch
-git checkout -b feature-branch
-Commit your changes
-
-git commit -m "Add new resource"
-Push to the branch
-
-git push origin feature-branch
-Open a pull request
 
 ⭐ Support This Project
 Leave a ⭐ on the project
@@ -117,6 +104,6 @@ Or just drop a kind message – it means the world 💙
 This repository is licensed under the MIT License.
 Feel free to use and share these resources for educational purposes.
 
-"Keep coding. Keep growing. And don’t forget to smile while debugging."
+> " coding. Keep growing. And don’t forget to smile while debugging."
 
 Happy Studying, and Good Luck at PoliTO! 🚀
