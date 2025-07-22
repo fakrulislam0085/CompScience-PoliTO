@@ -10,7 +10,7 @@ This repository is divided into three main directories to streamline your study 
 
 1.🧪 Labs
 
-Overview: Contains materials for 12 lab sessions from the 2024–2025 academic year. They are basically same for every year!
+Overview: Contains materials for **12 lab sessions** from the 2024–2025 academic year. They are basically same for every year!
 Content:
 Each lab includes the lecture slides used during the session.
 Solutions to the lab problems are provided to aid understanding and practice.
@@ -18,16 +18,20 @@ Purpose: These resources are perfect for hands-on practice and reinforcing conce
 
 2.📖 Lectures
 
-Overview: Organized into 7 folders, each dedicated to a specific lecture of the course.
-Content: All code snippets from the lecture slides are included in their respective folders.
+Overview: Organized into **7 folders** for total 8 lectures, each dedicated to a specific lecture of the course.
+Content: 
+All code snippets from the lecture slides are included in their respective folders.
 Structured to align with the course syllabus for easy reference.
 Purpose: Use these materials to review theoretical concepts and follow along with in-class coding examples.
 
 3.📝 Exam Questions
 
-Overview: Contains individual folders for each exam question, structured for clarity.
-Content: Each folder includes the question documented in a dedicated README.md file and its solution in the .py file. 
-Purpose: Practice with real exam questions and solutions to prepare effectively for assessments.
+Overview: 
+Contains individual folders for each exam question, structured for clarity.
+Content: 
+Each folder includes the question documented in a dedicated README.md file and its solution in the .py file. 
+Purpose: 
+Practice with real exam questions and solutions to prepare effectively for assessments.
 
 
 🎯 Why Use This Repository?
