@@ -81,15 +81,17 @@ Navigate the Directories:
 
 
 👉 Contribute
+
 Found an error or want to add more resources?
+
 Feel free to submit a pull request or contact me!
+
 
 👨‍💻 Author
 
 Fakrul Islam (Arif)
 
 📍 Computer Engineering Student @ PoliTO
-
 📬 Email: fakrulislam0085@gmail.com
 
 🔗 LinkedIn: linkedin.com/in/fakrul-islam-08
@@ -100,19 +102,24 @@ Fakrul Islam (Arif)
 
 
 🙌 Contributing
+
 Contributions are welcome! If you have additional notes, solutions, or resources to share, please:
 
 ⭐ Support This Project
+
 Leave a ⭐ on the project
 
 Share it with your classmates
 
 Or just drop a kind message – it means the world 💙
 
+
 📜 License
 This repository is licensed under the MIT License.
+
 Feel free to use and share these resources for educational purposes.
 
 > " coding. Keep growing. And don’t forget to smile while debugging."
+
 
 Happy Studying, and Good Luck at PoliTO! 🚀
