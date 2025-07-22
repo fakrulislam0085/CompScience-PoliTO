@@ -72,11 +72,16 @@ This repository is designed to be a one-stop resource for Computer Science stude
 ```bash
 git clone https://github.com/fakrulislam0085/CompScience-PoliTO.git
 
+```
+
 Navigate the Directories:
 
 Explore the Labs/ folder for hands-on exercises
+
 Check the Lectures/ folder for theoretical content and code
+
 Dive into the Exam Questions/ folder for exam preparation
+
 
 👉 Contribute
 Found an error or want to add more resources?
