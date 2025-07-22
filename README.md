@@ -11,8 +11,7 @@ This repository is divided into three main directories to streamline your study 
 1.🧪 Labs
 
 Overview: Contains materials for **12 lab sessions** from the 2024–2025 academic year. They are basically same for every year!
-Content:
-Each lab includes the lecture slides used during the session.
+Content: Each lab includes the lecture slides used during the session.
 Solutions to the lab problems are provided to aid understanding and practice.
 Purpose: These resources are perfect for hands-on practice and reinforcing concepts covered in lectures.
 
