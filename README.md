@@ -75,12 +75,9 @@ git clone https://github.com/fakrulislam0085/CompScience-PoliTO.git
 ```
 
 Navigate the Directories:
-
-Explore the Labs/ folder for hands-on exercises
-
-Check the Lectures/ folder for theoretical content and code
-
-Dive into the Exam Questions/ folder for exam preparation
+  - Explore the Labs/ folder for hands-on exercises
+  - Check the Lectures/ folder for theoretical content and code
+  - Dive into the Exam Questions/ folder for exam preparation
 
 
 👉 Contribute
@@ -88,12 +85,19 @@ Found an error or want to add more resources?
 Feel free to submit a pull request or contact me!
 
 👨‍💻 Author
+
 Fakrul Islam (Arif)
+
 📍 Computer Engineering Student @ PoliTO
+
 📬 Email: fakrulislam0085@gmail.com
+
 🔗 LinkedIn: linkedin.com/in/fakrul-islam-08
+
 📸 IG (study/life): https://www.instagram.com/lifeatpolito/
+
 💖 IG (personal): https://www.instagram.com/fakhrulislam.arif
+
 
 🙌 Contributing
 Contributions are welcome! If you have additional notes, solutions, or resources to share, please:
