@@ -87,39 +87,39 @@ Found an error or want to add more resources?
 Feel free to submit a pull request or contact me!
 
 
-👨‍💻 Author
+## 👉 Contribute
 
-Fakrul Islam (Arif)
+Found an error or want to add more resources?  
+Feel free to submit a pull request or contact me!
 
-📍 Computer Engineering Student @ PoliTO
-📬 Email: fakrulislam0085@gmail.com
+---
 
-🔗 LinkedIn: linkedin.com/in/fakrul-islam-08
+## 👨‍💻 Author
 
-📸 IG (study/life): https://www.instagram.com/lifeatpolito/
+**Fakrul Islam (Arif)**  
+📍 Computer Engineering Student @ PoliTO  
+📬 Email: [fakrulislam0085@gmail.com](mailto:fakrulislam0085@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/fakrul-islam-08](https://www.linkedin.com/in/fakrul-islam-08)  
+📸 IG (study/life): [@lifeatpolito](https://www.instagram.com/lifeatpolito/)  
+💖 IG (personal): [@fakhrulislam.arif](https://www.instagram.com/fakhrulislam.arif)
 
-💖 IG (personal): https://www.instagram.com/fakhrulislam.arif
+---
 
+## ⭐ Support This Project
 
-🙌 Contributing
+- Leave a ⭐ on the project  
+- Share it with your classmates  
+- Or just drop a kind message – it means the world 💙
 
-Contributions are welcome! If you have additional notes, solutions, or resources to share, please:
+---
 
-⭐ Support This Project
+## 📜 License
 
-Leave a ⭐ on the project
-
-Share it with your classmates
-
-Or just drop a kind message – it means the world 💙
-
-
-📜 License
-This repository is licensed under the MIT License.
-
+This repository is licensed under the **MIT License**.  
 Feel free to use and share these resources for educational purposes.
 
-> " coding. Keep growing. And don’t forget to smile while debugging."
+> *"Keep coding. Keep growing. And don’t forget to smile while debugging."*
 
+---
 
-Happy Studying, and Good Luck at PoliTO! 🚀
+**Happy Studying, and Good Luck at PoliTO! 🚀**
