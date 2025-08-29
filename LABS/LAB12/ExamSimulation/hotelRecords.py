@@ -59,8 +59,9 @@ def process(file1, file2, file3) :
                     writeFile.write(f"\tThe guest {Sname} had no contacts\n")
 
 
-    except FileNotFoundError : 
-        print(f"{file1/file2/file3}: Not found.")
+    except FileNotFoundError as e:
+        print(f"{e.filename}: Not found.")
+
         
 
 def main() : 

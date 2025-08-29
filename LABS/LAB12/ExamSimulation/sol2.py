@@ -30,7 +30,7 @@ def findTheContacts() :
                     print("Couldn't convert the values to int")
 
                 if cName != sName :
-                    if cIn in range(sIn, sOut+1) or cOut in range(sIn, sOut): 
+                    if cIn in range(sIn, sOut+1) or cOut in range(sIn, sOut+1): 
                         foundConnection = True
                         collectContacts.append((cName, customerDict[cName]['Phone']))
                         # print(f"\tContact with {cName}, phone {customerDict[cName]['Phone']}")
@@ -61,22 +61,15 @@ def main() :
                 if len(line) == 4 : 
                     name, phone, inD, outD = line 
                     customerDict[name] = {'Phone':phone, 'Check-in': inD, 'Check-out': outD}
-
-                    try : 
-                        inD, outD = int(inD) , int(outD) 
-
-                    except ValueError : 
-                        print("Couldn't conver the values to int.")
                 
                 else : 
                     print("Couldn't translate the line.")
                     continue 
+            # print(customerDict) 
 
     except FileNotFoundError : 
         print(f"{FILENAME1}: Is not found.") 
     
-    # print(customerDict) 
-
     findTheContacts()
 
 
