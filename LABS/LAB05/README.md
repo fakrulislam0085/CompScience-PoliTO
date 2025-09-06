@@ -80,3 +80,8 @@ By the end of this lab, you’ll not only master Python looping techniques but a
 
 All solutions are available under:  
 `LABS/LAB05`  
+
+---
+
+🚀 Keep pushing, grind hard, and learn the logics with Python each day.
+
