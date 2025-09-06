@@ -1,9 +1,5 @@
 ## 🧪 Lab 06: Functions & Applications
 
-📂 **Lab Structure:** `LABS/LAB06`
-
----
-
 ## 📢 Welcome Note
 
 Welcome to **Lab 06** of the *Computer Science Laboratory* course at Politecnico di Torino. This lab focuses on building and applying **functions**, strengthening your skills in **string processing, mathematical modeling, and problem decomposition**. By the end, you’ll be comfortable writing reusable code blocks, applying formulas from real-world physics and engineering, and implementing classical problems such as Roman numeral conversion.
@@ -27,6 +23,10 @@ This lab is split into **two parts**:
 - Problem decomposition (splitting large problems into smaller subfunctions)
 - Sentinel values for iterative input handling
 - Classical logic problems (Roman numerals)
+
+---
+
+📂 **Lab Structure:** `LABS/LAB06`
 
 ---
 
@@ -87,9 +87,10 @@ This lab is split into **two parts**:
 4. **Use sentinel values smartly.** They make loops flexible and powerful.
 5. **Keep improving readability.** Your future self (and teammates) will thank you.
 
-===
+---
 > 💡 Inspirational Note: “Programs must be written for people to read, and only incidentally for machines to execute.” — Harold Abelson
 > 
 
 ---
+
 
