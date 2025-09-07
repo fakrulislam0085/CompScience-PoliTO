@@ -58,48 +58,125 @@ This README gives you the concepts, short recipes, suggested exercises, and tips
 
 ## 🧰 New concepts & short cheatsheet
 
-### Sets & set operations
+🔗 Sets & set operations
+Operation	Meaning	Example
+s = set(iterable)	Build a set (unique items)	s = set("hello") # {'h','e','l','o'}
+A & B	Intersection (common elements)	{'a','b'} & {'b','c'} -> {'b'}
+A | B	Union (all elements)	{'a'} | {'b'} -> {'a','b'}
+A - B	Difference (in A not in B)	{'a','b'} - {'b'} -> {'a'}
+A ^ B	Symmetric diff (in A or B but not both)	{'a','b'} ^ {'b','c'} -> {'a','c'}
+Membership	Fast test for presence	'x' in s is O(1) on average
 
-- `s = set(iterable)` — build a set
-- `A & B` — intersection
-- `A | B` — union
-- `A - B` — difference
-- `A ^ B` — symmetric difference
-- Good for membership (`x in s`) and uniqueness.
+Tip: Use sets for uniqueness, fast membership tests, and simple set algebra.
 
-### Dictionaries (maps)
+🗺️ Dictionaries (maps)
+Pattern	Purpose	Example
+Create	d = {}	
+Assign	d[key] = value	d['Italy'] = 35000
+Safe lookup	d.get(key, default)	d.get('USA', 0)
+Iterate	for k, v in d.items():	
+Sort by value	sorted(d.items(), key=lambda kv: kv[1], reverse=True)	Top frequencies
 
-- `d = {}`; `d[key] = value`
-- `d.get(key, default)` — safe retrieval
-- `for k, v in d.items():` iterate pairs
-- `sorted(d.items(), key=lambda kv: kv[1], reverse=True)` — sort by value
+Mini example
 
-### File parsing
+counts = {}
+for w in words:
+    counts[w] = counts.get(w, 0) + 1
+# top-5
+top5 = sorted(counts.items(), key=lambda kv: kv[1], reverse=True)[:5]
 
-- Plain text: `open("file.txt")`, `.read()` or iterate lines
-- Tab-separated: use `.split('\t')` or `csv` module with `delimiter='\t'`
-- CSV: `import csv` → `csv.reader(...)` or `csv.DictReader(...)`
+📄 File parsing (quick recipes)
+File type	Read method	Note
+Plain text	with open("file.txt") as f: lines = f.read() or iterate for line in f:	.strip() to clean whitespace
+Tab-separated	line.split('\t') or csv.reader(..., delimiter='\t')	Use csv for robustness
+CSV	import csv → csv.DictReader(...)	Handles quoted fields automatically
 
-### Sparse vectors (dict representation)
+Tip: Always .strip() before .split() and handle empty lines.
 
-- Represent vector `v` by `{i: v_i for v_i != 0}`
-- To add: iterate over keys union and sum `a.get(i,0) + b.get(i,0)` — store only nonzero results.
+🔢 Sparse vectors (dict representation)
 
-### Sieve of Eratosthenes (key idea)
+Idea: Store only non-zero entries: {index: value}.
 
-- Start with set `S = {2,3,...,n}`.
-- Repeatedly take smallest element `p` in `S` (starting at 2) and remove `multiples = {p*k for k in range(2, ...)}` until `p*p > n`.
+Function sketch
 
-### Maze → corridors dictionary
+def sparse_array_sum(a, b):
+    result = {}
+    keys = set(a) | set(b)
+    for k in keys:
+        s = a.get(k, 0) + b.get(k, 0)
+        if s != 0:
+            result[k] = s
+    return result
 
-- Scan file lines; for every `' '` (space) at coords `(r,c)`, collect adjacent corridor coordinates among four neighbors.
-- `corridors[(r,c)] = set(adjacent_positions)`.
 
-### Ariadne’s thread algorithm (sketch)
+Why: Memory & time efficient when most entries are zero.
 
-- `paths = {pos: '?' for pos in corridors}`
-- For edge positions (row == 0 or col == 0 or row == max_row or col == max_col) assign direction to exit (`N/E/S/W`)
-- Iteratively fill any `paths[pos] == '?'` that has neighbor with known `paths[neighbor] != '?'`. Repeat until no change.
+🧠 Sieve of Eratosthenes (core idea + tiny pseudocode)
+
+Core idea: start with S = {2..n}, repeatedly remove multiples of the smallest remaining number.
+
+Pseudocode
+
+S = set(2..n-1)
+p = 2
+while p*p < n:
+    remove multiples of p from S (starting at p*p)
+    p = next element in S after p
+return sorted(S)
+
+
+Note: Removing from a set is fine for moderate n; for very large n use a boolean array (memory & speed benefits).
+
+🧭 Maze → corridors dictionary
+
+Goal: convert ASCII maze into adjacency dictionary.
+
+Rule: for every corridor cell (r,c) (a space ' '), set
+
+corridors[(r,c)] = { (nr,nc) for each neighbor that is also a corridor }
+
+
+Neighbors = up/down/left/right: [(−1,0),(1,0),(0,−1),(0,1)]
+
+Mini code
+
+for r, line in enumerate(lines):
+    for c, ch in enumerate(line.rstrip('\n')):
+        if ch == ' ':
+            adj = set()
+            for dr, dc in [(-1,0),(1,0),(0,-1),(0,1)]:
+                nr, nc = r+dr, c+dc
+                if inside_bounds and lines[nr][nc] == ' ':
+                    adj.add((nr,nc))
+            corridors[(r,c)] = adj
+
+🧵 Ariadne’s thread (algorithm sketch)
+
+paths = {pos: '?' for pos in corridors}
+
+For edge cells (exits) set paths[edge] = direction (N/E/S/W) toward outside.
+
+Repeat:
+
+For each pos with paths[pos] == '?', if any neighbor n has paths[n] != '?', set paths[pos] = direction_to(n).
+
+Stop when no changes occur.
+
+The paths dict will contain the direction to move from each corridor cell toward the nearest exit (or ? if unreachable).
+
+Note: This is a BFS-like wave propagation; it produces shortest-path directions (in number of steps).
+
+✅ Final quick tips
+
+Use set() when uniqueness or membership speed matters.
+
+Use dict for sparse structures and counting.
+
+For parsing text files, prefer csv when columns are structured.
+
+When implementing algorithms (sieve, BFS-like propagation), sketch the logic in plain english first, then code.
+
+Add small tests and assert invariants (e.g., end >= start for intervals, len(parts) >= expected for parsed lines).
 
 ---
 
@@ -148,3 +225,4 @@ LABS/
 ---
 
 ### Code, Eat and Sleep! ⌨️🥷
+
