@@ -58,47 +58,63 @@ This README gives you the concepts, short recipes, suggested exercises, and tips
 
 ## 🧰 New concepts & short cheatsheet
 
-🔗 Sets & set operations
-Operation	Meaning	Example
-s = set(iterable)	Build a set (unique items)	s = set("hello") # {'h','e','l','o'}
-A & B	Intersection (common elements)	{'a','b'} & {'b','c'} -> {'b'}
-A | B	Union (all elements)	{'a'} | {'b'} -> {'a','b'}
-A - B	Difference (in A not in B)	{'a','b'} - {'b'} -> {'a'}
-A ^ B	Symmetric diff (in A or B but not both)	{'a','b'} ^ {'b','c'} -> {'a','c'}
-Membership	Fast test for presence	'x' in s is O(1) on average
+## 🔗 Sets & set operations
 
-Tip: Use sets for uniqueness, fast membership tests, and simple set algebra.
+| Operation | Meaning | Example |
+| --- | --- | --- |
+| `s = set(iterable)` | Build a set (unique items) | `s = set("hello")  # {'h','e','l','o'}` |
+| `A & B` | Intersection (common elements) | `{'a','b'} & {'b','c'} -> {'b'}` |
+| `A | B` | Union (all elements) | `{'a'} | {'b'} -> {'a','b'}` |
+| `A - B` | Difference (in A not in B) | `{'a','b'} - {'b'} -> {'a'}` |
+| `A ^ B` | Symmetric diff (in A or B but not both) | `{'a','b'} ^ {'b','c'} -> {'a','c'}` |
+| Membership | Fast test for presence | `'x' in s` is O(1) on average |
 
-🗺️ Dictionaries (maps)
-Pattern	Purpose	Example
-Create	d = {}	
-Assign	d[key] = value	d['Italy'] = 35000
-Safe lookup	d.get(key, default)	d.get('USA', 0)
-Iterate	for k, v in d.items():	
-Sort by value	sorted(d.items(), key=lambda kv: kv[1], reverse=True)	Top frequencies
+**Tip:** Use sets for uniqueness, fast membership tests, and simple set algebra.
 
-Mini example
+---
 
+## 🗺️ Dictionaries (maps)
+
+| Pattern | Purpose | Example |
+| --- | --- | --- |
+| Create | `d = {}` |  |
+| Assign | `d[key] = value` | `d['Italy'] = 35000` |
+| Safe lookup | `d.get(key, default)` | `d.get('USA', 0)` |
+| Iterate | `for k, v in d.items():` |  |
+| Sort by value | `sorted(d.items(), key=lambda kv: kv[1], reverse=True)` | Top frequencies |
+
+**Mini example**
+
+```python
 counts = {}
 for w in words:
     counts[w] = counts.get(w, 0) + 1
 # top-5
 top5 = sorted(counts.items(), key=lambda kv: kv[1], reverse=True)[:5]
 
-📄 File parsing (quick recipes)
-File type	Read method	Note
-Plain text	with open("file.txt") as f: lines = f.read() or iterate for line in f:	.strip() to clean whitespace
-Tab-separated	line.split('\t') or csv.reader(..., delimiter='\t')	Use csv for robustness
-CSV	import csv → csv.DictReader(...)	Handles quoted fields automatically
+```
 
-Tip: Always .strip() before .split() and handle empty lines.
+---
 
-🔢 Sparse vectors (dict representation)
+## 📄 File parsing (quick recipes)
 
-Idea: Store only non-zero entries: {index: value}.
+| File type | Read method | Note |
+| --- | --- | --- |
+| Plain text | `with open("file.txt") as f: lines = f.read()` or iterate `for line in f:` | `.strip()` to clean whitespace |
+| Tab-separated | `line.split('\t')` or `csv.reader(..., delimiter='\t')` | Use `csv` for robustness |
+| CSV | `import csv` → `csv.DictReader(...)` | Handles quoted fields automatically |
 
-Function sketch
+**Tip:** Always `.strip()` before `.split()` and handle empty lines.
 
+---
+
+## 🔢 Sparse vectors (dict representation)
+
+**Idea:** Store only non-zero entries: `{index: value}`.
+
+**Function sketch**
+
+```python
 def sparse_array_sum(a, b):
     result = {}
     keys = set(a) | set(b)
@@ -108,15 +124,19 @@ def sparse_array_sum(a, b):
             result[k] = s
     return result
 
+```
 
-Why: Memory & time efficient when most entries are zero.
+**Why:** Memory & time efficient when most entries are zero.
 
-🧠 Sieve of Eratosthenes (core idea + tiny pseudocode)
+---
 
-Core idea: start with S = {2..n}, repeatedly remove multiples of the smallest remaining number.
+## 🧠 Sieve of Eratosthenes (core idea + tiny pseudocode)
 
-Pseudocode
+**Core idea:** start with `S = {2..n}`, repeatedly remove multiples of the smallest remaining number.
 
+**Pseudocode**
+
+```
 S = set(2..n-1)
 p = 2
 while p*p < n:
@@ -124,22 +144,28 @@ while p*p < n:
     p = next element in S after p
 return sorted(S)
 
+```
 
-Note: Removing from a set is fine for moderate n; for very large n use a boolean array (memory & speed benefits).
+**Note:** Removing from a set is fine for moderate `n`; for very large `n` use a boolean array (memory & speed benefits).
 
-🧭 Maze → corridors dictionary
+---
 
-Goal: convert ASCII maze into adjacency dictionary.
+## 🧭 Maze → corridors dictionary
 
-Rule: for every corridor cell (r,c) (a space ' '), set
+**Goal:** convert ASCII maze into adjacency dictionary.
 
+**Rule:** for every corridor cell `(r,c)` (a space `' '`), set
+
+```python
 corridors[(r,c)] = { (nr,nc) for each neighbor that is also a corridor }
 
+```
 
-Neighbors = up/down/left/right: [(−1,0),(1,0),(0,−1),(0,1)]
+**Neighbors** = up/down/left/right: `[(−1,0),(1,0),(0,−1),(0,1)]`
 
-Mini code
+**Mini code**
 
+```python
 for r, line in enumerate(lines):
     for c, ch in enumerate(line.rstrip('\n')):
         if ch == ' ':
@@ -150,33 +176,30 @@ for r, line in enumerate(lines):
                     adj.add((nr,nc))
             corridors[(r,c)] = adj
 
-🧵 Ariadne’s thread (algorithm sketch)
+```
 
-paths = {pos: '?' for pos in corridors}
+---
 
-For edge cells (exits) set paths[edge] = direction (N/E/S/W) toward outside.
+## 🧵 Ariadne’s thread (algorithm sketch)
 
-Repeat:
+1. `paths = {pos: '?' for pos in corridors}`
+2. For edge cells (exits) set `paths[edge] = direction` (N/E/S/W) toward outside.
+3. Repeat:
+    - For each `pos` with `paths[pos] == '?'`, if any neighbor `n` has `paths[n] != '?'`, set `paths[pos] = direction_to(n)`.
+    - Stop when no changes occur.
+4. The `paths` dict will contain the direction to move from each corridor cell toward the nearest exit (or `?` if unreachable).
 
-For each pos with paths[pos] == '?', if any neighbor n has paths[n] != '?', set paths[pos] = direction_to(n).
+**Note:** This is a BFS-like wave propagation; it produces shortest-path directions (in number of steps).
 
-Stop when no changes occur.
+---
 
-The paths dict will contain the direction to move from each corridor cell toward the nearest exit (or ? if unreachable).
+## ✅ Final quick tips
 
-Note: This is a BFS-like wave propagation; it produces shortest-path directions (in number of steps).
-
-✅ Final quick tips
-
-Use set() when uniqueness or membership speed matters.
-
-Use dict for sparse structures and counting.
-
-For parsing text files, prefer csv when columns are structured.
-
-When implementing algorithms (sieve, BFS-like propagation), sketch the logic in plain english first, then code.
-
-Add small tests and assert invariants (e.g., end >= start for intervals, len(parts) >= expected for parsed lines).
+- Use `set()` when uniqueness or membership speed matters.
+- Use `dict` for sparse structures and counting.
+- For parsing text files, prefer `csv` when columns are structured.
+- When implementing algorithms (sieve, BFS-like propagation), sketch the logic in plain english first, then code.
+- Add small tests and assert invariants (e.g., `end >= start` for intervals, `len(parts) >= expected` for parsed lines).
 
 ---
 
@@ -225,4 +248,3 @@ LABS/
 ---
 
 ### Code, Eat and Sleep! ⌨️🥷
-
