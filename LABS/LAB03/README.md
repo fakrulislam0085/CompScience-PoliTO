@@ -103,7 +103,7 @@ print(word.count("a"))  # 3
 
 ### 🧱 Alignment Formatting
 
-Use `:<`, `:>`, `:^` to cleanly align outputs:
+Use `:<`, `:>`, `:^` to cleanly align(Right/Left/Center) outputs:
 
 ```python
 print(f"{'Label':<20}{42:>5}")
@@ -123,10 +123,12 @@ def show_info(**kwargs):
         print(key, val)
 ```
 
-### 🎭 `isupper()` vs `upper()`
+### 🎭 `isupper()`/`islower()` vs `upper()`/`lower()`    
 
 * `isupper()` checks if ALL letters are uppercase.
 * `upper()` transforms string to uppercase.
+* `islower()` checks if ALL letters are lowercase.
+* `lower()` transforms string to lowercase.
 
 ```python
 s = "ABC"
@@ -138,7 +140,7 @@ s.upper()    # 'ABC'
 
 ## 📁 Project Structure
 
-Your files are organized in:
+All of the files of this lab are organized in this structure:
 
 ```
 /LABS
@@ -170,3 +172,5 @@ Each exercise lives in its own `.py` file. Great for clarity, testing, and futur
 Go crush it, clean coder. 💥
 
 Happy coding! 🧠💻
+
+

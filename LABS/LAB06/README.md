@@ -1,9 +1,5 @@
 ## 🧪 Lab 06: Functions & Applications
 
-📂 **Lab Structure:** `LABS/LAB06`
-
----
-
 ## 📢 Welcome Note
 
 Welcome to **Lab 06** of the *Computer Science Laboratory* course at Politecnico di Torino. This lab focuses on building and applying **functions**, strengthening your skills in **string processing, mathematical modeling, and problem decomposition**. By the end, you’ll be comfortable writing reusable code blocks, applying formulas from real-world physics and engineering, and implementing classical problems such as Roman numeral conversion.
@@ -30,19 +26,7 @@ This lab is split into **two parts**:
 
 ---
 
-## 🧰 New Concepts You Need to Know
-
-| Concept | What It Means |
-| --- | --- |
-| `.strip()` | Removes leading and trailing whitespace from a string |
-| `.split()` | Splits a string into words based on spaces or delimiters |
-| `.count(x)` | Counts occurrences of `x` in a string |
-| **f-strings** | Clean string formatting: `f"Hello {name}"` |
-| **Sentinel Value** | A special value (e.g., `-1`) used to terminate loops |
-| **Loop Exit Logic** | Writing proper `while True:` loops and breaking when condition is met |
-| `dictionary.get(key, 0)` | Safe way to get values from a dictionary without throwing an error |
-| **Roman → Decimal Logic** | Subtraction rule and pair evaluation for Roman numerals |
-| **Constants in CAPITALS** | Convention: `PI = 3.14`, `COPPER_RESISTIVITY = 1.678e-8` |
+📂 **Lab Structure:** `LABS/LAB06`
 
 ---
 
@@ -68,6 +52,22 @@ This lab is split into **two parts**:
 
 ---
 
+## 🧰 New Concepts You Need to Know
+
+| Concept | What It Means |
+| --- | --- |
+| `.strip()` | Removes leading and trailing whitespace from a string |
+| `.split()` | Splits a string into words based on spaces or delimiters |
+| `.count(x)` | Counts occurrences of `x` in a string |
+| **f-strings** | Clean string formatting: `f"Hello {name}"` |
+| **Sentinel Value** | A special value (e.g., `-1`) used to terminate loops |
+| **Loop Exit Logic** | Writing proper `while True:` loops and breaking when condition is met |
+| `dictionary.get(key, 0)` | Safe way to get values from a dictionary without throwing an error |
+| **Roman → Decimal Logic** | Subtraction rule and pair evaluation for Roman numerals |
+| **Constants in CAPITALS** | Convention: `PI = 3.14`, `COPPER_RESISTIVITY = 1.678e-8` |
+
+---
+
 ## 💎 Tips for Writing Clean Code
 
 - Always use **functions** for modularity.
@@ -87,7 +87,10 @@ This lab is split into **two parts**:
 4. **Use sentinel values smartly.** They make loops flexible and powerful.
 5. **Keep improving readability.** Your future self (and teammates) will thank you.
 
+---
 > 💡 Inspirational Note: “Programs must be written for people to read, and only incidentally for machines to execute.” — Harold Abelson
 > 
 
 ---
+
+
