@@ -1,5 +1,5 @@
-
-
+def print_table(table) : 
+    print(f"Table: {table}")
 
 def main() : 
     m, n = map(int, input("Enter the rows and columns: ").split())
@@ -27,7 +27,7 @@ def main() :
 
     #vi. calculate and print the sum of all the elements 
     s = sum(sum(row) for row in table)
-    print(f"Sum fo the table: {s}") 
+    print(f"Sum of the table: {s}") 
 
 
 if __name__ == "__main__" : 
