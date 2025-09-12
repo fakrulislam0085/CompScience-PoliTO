@@ -1,6 +1,3 @@
-def print_table(table) : 
-    print(f"Table: {table}")
-
 def main() : 
     m, n = map(int, input("Enter the rows and columns: ").split())
     table = []
@@ -32,4 +29,5 @@ def main() :
 
 if __name__ == "__main__" : 
     main() 
+
 
