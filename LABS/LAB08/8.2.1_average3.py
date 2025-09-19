@@ -1,4 +1,3 @@
-
 def neighbor_average(values, row, col) :
     neighbor_sum = 0 
     neighbor_count = 0 
@@ -28,5 +27,6 @@ def main() :
 
 if __name__ == "__main__" : 
     main() 
+
 
 
