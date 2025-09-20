@@ -26,8 +26,6 @@ def main() :
             spaces += 1 
 
             print(spaces*' ' + asterisks*'*')
-            
-
 
 if __name__ == "__main__" : 
     main() 
