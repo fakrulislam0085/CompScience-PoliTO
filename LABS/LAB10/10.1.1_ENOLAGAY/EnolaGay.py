@@ -23,8 +23,7 @@ def main() :
 
     except FileNotFoundError :
         print("Input or output file is not found!") 
-    
-
 
 if __name__ == "__main__" : 
     main() 
+
