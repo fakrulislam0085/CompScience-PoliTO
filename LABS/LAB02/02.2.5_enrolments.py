@@ -11,6 +11,5 @@ def main() :
     else : 
         print(f"{student_id1}\n{student_id2}")
     
-
 if __name__ == "__main__" : 
     main() 
