@@ -28,6 +28,5 @@ def main() :
     if duplicate : 
         print(f"Value {previous} is duplicated.")
 
-
 if __name__ == "__main__" : 
     main() 
