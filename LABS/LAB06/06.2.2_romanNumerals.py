@@ -1,3 +1,10 @@
+"""Roman numeral converter.
+
+Provides a small utility to convert Roman numerals (string) to decimal integers.
+Run the script and enter a Roman numeral when prompted; the decimal value
+will be printed.
+"""
+
 def roman_value(ch) : 
     values = { 
         'I' : 1, 

@@ -10,8 +10,7 @@ def calculate_financial_aid(inc, ch) :
 def main() : 
     sentinel_val = -1 
 
-    while True : 
-        
+    while True :   
         income_per_annum = float(input("Enter the annual income of your family: ")) 
         number_of_children = int(input("How many children do you have?: ")) 
 

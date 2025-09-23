@@ -1,25 +1,30 @@
-from math import pi 
+"""Electric wire resistance calculator.
 
-COPPER_RESISTANCE = 1.678e-8 
-ALUMINUM_RESISTANCE = 2.82E-8 
+Calculates the electrical resistance of a wire made of copper or aluminum
+given its length (in meters) and American Wire Gauge (AWG).
 
+Usage: run the script and enter the wire length in meters and the AWG.
+Returns resistance in ohms.
+"""
+
+from math import pi
+
+COPPER_RESISTANCE = 1.678e-8
+ALUMINUM_RESISTANCE = 2.82E-8
 
 def diameter(wire_gauge) : 
     d = 0.127 * 92**((36-wire_gauge)/39)  # mm 
     return d / 1000     # m
-
 
 def copper_wire_resistance(length, wire_gauge) : 
     d = diameter(wire_gauge)
     r = (4 * COPPER_RESISTANCE * length) / (pi * d**2)
     return r
 
-
 def aluminum_wire_resistance(length, wire_gauge) : 
     d = diameter(wire_gauge)
     r = (4 * ALUMINUM_RESISTANCE * length) / (pi * d**2)
     return r
-
 
 def main() : 
     length = float(input("Enter the length of a piece of wire(m): ")) 

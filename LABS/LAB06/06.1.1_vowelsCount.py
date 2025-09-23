@@ -5,11 +5,9 @@ def count_vowels(string) :
             cnt +=1 
     return cnt 
 
-
 def main() : 
     string = input("Write the string: ") 
     print(f"The string contains {count_vowels(string)} vowels")
-
 
 if __name__ == "__main__" : 
     main() 
