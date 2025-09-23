@@ -1,5 +1,6 @@
 import random 
 
+# Generates a list of 20 random integers (0-99) and prints it sorted.
 def orderedList(integerList) :
     #sortedList = sorted(integerList)
     

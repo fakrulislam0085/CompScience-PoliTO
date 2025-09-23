@@ -1,13 +1,13 @@
 def remove_min(myList) :
-    min_val = myList[0]    #suppose the first value of  myList is minimum 
+    min_val = myList[0]    # Suppose the first value of  myList is minimum 
     withoutMin = []
 
-    # find out the minimum value 
+    # Find out the minimum value 
     for value in myList :
         if value < min_val :
             min_val = value 
     
-    # create a list without minimum value 
+    # Create a list without minimum value 
     for value in myList :
         if value != min_val :
             withoutMin.append(value)

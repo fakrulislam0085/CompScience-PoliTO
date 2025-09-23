@@ -1,8 +1,9 @@
+# Detects local maxima in a list of integers and returns their 1-based positions.
 def localMaximaDetector(OurList) :
     posOfLocalMaxima = []
 
     for i, num in enumerate(OurList) :
-        if i==0 or i==len(OurList)-1 :          #first and last value should be ignored
+        if i==0 or i==len(OurList)-1 :          # First and last value should be ignored
             continue
         elif OurList[i-1] < num > OurList[i+1] :
             posOfLocalMaxima.append(i+1)

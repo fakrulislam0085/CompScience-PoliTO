@@ -1,5 +1,6 @@
 import random 
 
+# Generates 10 random integers (1-100) and prints list-based operations.
 def operationOnList(randomList) :
     evenIndexElement = []
     evenValue = []

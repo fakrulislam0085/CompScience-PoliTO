@@ -1,3 +1,4 @@
+# Checks if two lists contain the same elements (order ignored).
 def same_set(a, b) :
     a_set = set(a) 
     b_set = set(b) 

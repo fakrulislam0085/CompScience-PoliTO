@@ -1,5 +1,4 @@
-# solution 2
-
+# Solution 2
 def main() : 
     n = int(input("Total Parking spaces: ")) 
 

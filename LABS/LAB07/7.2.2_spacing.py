@@ -37,6 +37,5 @@ def main():
         park_car(parking_row)
         display_parking_row(parking_row)
 
-
 if __name__ == "__main__" : 
     main()

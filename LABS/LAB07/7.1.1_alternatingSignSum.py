@@ -1,5 +1,5 @@
 def alternating_Sum():
-    #to remove any leading or trailing spaces from the input we use .strip()
+    # To remove any leading or trailing spaces from the input we use .strip()
     line = input("Enter numbers separated by spaces (terminate by pressing Enter on a blank line): ").strip()
     
     # Split the line into a list of integers
