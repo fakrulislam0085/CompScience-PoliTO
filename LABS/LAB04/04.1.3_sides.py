@@ -7,7 +7,6 @@ def main() :
             print("*", end="")
         print() 
     
-
     # Printing the Rhombus
     print()
     asterisks = 1 
