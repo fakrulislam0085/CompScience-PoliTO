@@ -2,6 +2,7 @@
 
 > “Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra
 > 
+> "Code is like humor. When you have to explain it, it’s bad." — Cory House (Programmer and educator)
 
 ---
 
@@ -143,3 +144,4 @@ LABS/
 ---
 
 ## 🚀 Happy Coding and Advance Congratulations for getting 30L in your first Computer Science Exam!🎀
+

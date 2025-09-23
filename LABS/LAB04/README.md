@@ -1,5 +1,7 @@
 ## 🧪 Lab 04: Loops, Logic & Simulations
 
+> "Testing leads to debugging, and debugging leads to a better understanding of the code." — E.W. Dijkstra (Pioneering computer scientist)
+----
 Welcome to **Lab 04** of the *Computer Science Laboratory* course at Politecnico di Torino! This lab will make you fall in love with **loops**, **patterns**, and **simulations**. It’s all about mastering repetition, digging deep into control flow, and simulating real-world systems using **physics**, **games**, and **text processing**.
 
 > 💬 Message for juniors:
@@ -106,3 +108,4 @@ Here are the most important **new concepts** introduced in Lab 04:
 📂 All solutions are available under `LABS/LAB04` directory.
 
 🚀 Keep exploring, keep solving, and fall a little more in love with Python each day.
+

@@ -1,4 +1,4 @@
-# using camelCase 
+# using snake_case 
 def calculate_total_cost() : 
     new_car_price = float(input("Enter the price of a new car (in Euro): "))
     yearly_km = float(input("Enter the estimated kilometers traveled/year: "))                # kM = 30,000
@@ -31,7 +31,6 @@ def main() :
         print("🛢️ Verdict: The **Gasoline** car is more cost-effective! ✅")
     else:
         print("🤝 Verdict: Both cars cost the same. Choose based on preferences!")
- 
     
 if __name__ == "__main__" : 
     main() 

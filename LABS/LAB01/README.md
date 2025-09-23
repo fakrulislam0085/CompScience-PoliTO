@@ -1,6 +1,8 @@
 # Lab 01 — Course Overview, Setup & Python Built-ins Cheat Sheet
 
 > Short course overview + quick setup so you (and your classmates) can start coding immediately.
+---
+> "Simplicity is the soul of Python." — Guido van Rossum (Creator of Python)
 > 
 
 ---
@@ -201,3 +203,4 @@ Getting started with Python programming? Here are some helpful tips to make your
 - **Use virtual environments**: Keep project dependencies isolated with `venv` or `conda`
 - **Read error messages carefully**: Python provides helpful error messages - the solution is often in the error text
 - **Practice regularly**: Consistent practice is key to learning any programming language
+

@@ -14,7 +14,6 @@ def main() :
 if __name__ == "__main__" : 
     main() 
 
-
 ''' 
 ord((emoji_1):4X) -> here 'X' indicates to convert the ord code to Hexadecimal code
 and '4' indicates the width of the output which should be minimum 4 characters. 

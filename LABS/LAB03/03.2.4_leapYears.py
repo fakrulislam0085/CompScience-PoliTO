@@ -13,7 +13,6 @@ def leapYearTrack(y) :
     else :
         print(f"{y} is a leap year.") 
     
-
 def main() : 
     year = int(input("Enter the Year(greater than 1582): ")) 
     leapYearTrack(year) 
