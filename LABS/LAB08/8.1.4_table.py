@@ -14,7 +14,6 @@ def main() :
             table[row][col] = 1 
     print_table(table)
 
-
     #III. fill the table by alternating 0 and 1 in a checkerboard pattern
     for row in range(m) : 
         for col in range(n) : 
@@ -24,7 +23,6 @@ def main() :
                 table[row][col] = 1
 
     print_table(table)
-
 
     #IV. fill with 0 only the top and bottom rows, leaving the rest of the table unchanged;
     for col in range(n) : 

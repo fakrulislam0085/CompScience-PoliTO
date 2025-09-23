@@ -5,7 +5,6 @@ def magic_squares(matrix) :
     if sorted(all_elements) != list(range(1, 17)):
         return False
 
-
     #2. The sums of the rows, columns, and diagonals are all equal to each other
     magicSum = sum(matrix[0])
 

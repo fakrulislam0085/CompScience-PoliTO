@@ -5,7 +5,6 @@ MASS = 1    # kg
 K = 10  # N/m 
 TIMESTEP = 0.01 # s 
 
-
 def main() : 
 
     x = INITIAL_DISPLACEMENT 

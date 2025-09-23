@@ -6,7 +6,6 @@ def dice_rolls() :
     for i in range(20) : 
         a = random.randint(1, 6) 
         dice_roll_list.append(a)        # [for random.randint(1, 6) _ in range(20)]
-    
 
     max_length = 1  
     longest_seq = 1
@@ -41,10 +40,8 @@ def dice_rolls() :
         
     print(f"Formatted result: {' '.join(map(str,resultList ))}")
     
-
 def main() : 
     dice_rolls() 
-
 
 if __name__ == "__main__" : 
     main() 

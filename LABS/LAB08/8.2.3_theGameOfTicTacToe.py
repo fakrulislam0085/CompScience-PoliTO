@@ -1,3 +1,9 @@
+"""
+Console Tic-Tac-Toe for two players.
+Players alternate entering row and column (1-3) positions. The board shows
+current marks after each valid move. The game ends when a player aligns three
+marks (row, column, or diagonal) or when the board is full (tie).
+"""
 def isBoardFull(Board) :
     result = all(cell != "-" for row in Board for cell in row)
     return result   # true / false 
@@ -38,7 +44,6 @@ def playerMove(Board, row, col, move) :
     else :
         print("Cell is already taken! Choose another cell 🤷‍♀️")
         return False
-
 
 def main() : 
     print("🎮 Welcome To Tic-Tac-Toe Game! 🎉\n")
@@ -85,7 +90,6 @@ def main() :
         if isBoardFull(gameBoard) : 
             print("It's a Tie!")
             break
-
 
 if __name__ == "__main__" : 
     main() 

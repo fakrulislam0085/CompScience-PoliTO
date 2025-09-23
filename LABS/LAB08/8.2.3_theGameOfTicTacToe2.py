@@ -1,4 +1,5 @@
-# use camelCase 
+# Solution 2
+# Use camelCase 
 
 def displayGameBoard(gameBoard) : 
     for row in gameBoard : 
@@ -85,7 +86,6 @@ def main() :
         print(f"{' '.join([element for element in row])}")
     
     startsToPlay(gameBoard)
-        
 
 if __name__ == "__main__" : 
     main() 

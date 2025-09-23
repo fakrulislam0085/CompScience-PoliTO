@@ -1,3 +1,6 @@
+# Merges two lists by alternating their elements and appending the leftovers.
+# Reads two space-separated integer lists from input and prints the merged list
+# as a space-separated string.
 def merge(a, b) :
     lenA = len(a) 
     lenB = len(b) 

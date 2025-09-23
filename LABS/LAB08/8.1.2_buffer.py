@@ -1,3 +1,6 @@
+# This program shifts all elements one position to the right, with the last element 
+# moving to the first position.The program prints the list after each shift operation
+
 def shiftList(myList) :
     last_element = myList[-1]
     for i in range(len(myList)-1, 0, -1) :
