@@ -1,6 +1,9 @@
 import math 
 
 def is_prime(x) : 
+    # Test divisors from 2 up to floor(sqrt(x)).
+    # If any divisor divides x evenly, x is not prime.
+    # Assumes x >= 2; callers should start from 2.
     init_val = 2 
     last_val = int(math.sqrt(x))
 

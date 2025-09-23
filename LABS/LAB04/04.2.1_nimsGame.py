@@ -1,4 +1,8 @@
 import random 
+# Simple Nim game implementation:
+# - Players alternate taking 1 to floor(n/2) marbles from a pile of n.
+# - The player who takes the last marble loses (this implementation
+#   prints the opposite message, so note which player took the last marble).
 
 SMART = 0 
 DUMB = 1 
@@ -38,7 +42,7 @@ def dumb_mode(n) :
     return n- int(take)
 
 def main() : 
-    initial_size = random.randint(10, 100)          # use case of random module and methods 
+    initial_size = random.randint(10, 100)          # Use case of random module and methods 
     player = random.choice([0, 1])              # 0 = computer, 1 = Human
     strategy = random.choice([SMART, DUMB])
     
@@ -51,19 +55,19 @@ def main() :
     while curr_marbles > 1 : 
         print(f"\nMarbles left: {curr_marbles}")
 
-        if player == 0:     # computer's turn
+        if player == 0:     # Computer's turn
             print("Computer's Turn!")
             if strategy == DUMB : 
                 curr_marbles = dumb_mode(curr_marbles)
             else : 
                 curr_marbles = intelligent_mode(curr_marbles)
                         
-            player = 1      # update player
+            player = 1      # Update player
 
         else :      # Human's turn
             print("Human's Turn!")
             curr_marbles = humans_turn(curr_marbles)
-            player = 0      # update player
+            player = 0      # Update player
 
     if player == 0 : 
         print("\nComputer took the last marble. You won!") 

@@ -1,9 +1,9 @@
 from math import sqrt
 
 def is_prime(n) : 
-    # if we look at the math, we need values between 2 and the 
-    # square root of the number we're looking for and then If we divide our n by these 
-    # numbers and if we find out that the n is divisible then it's not prime. Simple! Easy-peasy! 
+    # Only test divisors from 2 up to floor(sqrt(n)).
+    # If any divisor in that range divides n evenly, n is not prime.
+    # This function assumes n >= 2; n == 2 is handled above.
 
     if n == 2 : 
         return True 
