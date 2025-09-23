@@ -61,7 +61,10 @@ def process(file1, file2, file3) :
 
     except FileNotFoundError as e:
         print(f"{e.filename}: Not found.")
+<<<<<<< HEAD
       
+=======
+>>>>>>> c5d46ef3e94255a8e812d927ef3e0f50a3c055fb
 
 def main() : 
     file1 = "customers.txt" 
