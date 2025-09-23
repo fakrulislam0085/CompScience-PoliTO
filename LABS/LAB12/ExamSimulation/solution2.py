@@ -42,7 +42,6 @@ def findTheContacts() :
                 for n, p in sortedContacts : 
                     print(f"\tContact with {n}, phone {p}")
 
-
 def main() : 
     try : 
         with open(FILENAME2, 'r') as suspectF : 
@@ -72,6 +71,6 @@ def main() :
     
     findTheContacts()
 
-
 if __name__ == "__main__" : 
     main() 
+
