@@ -1,0 +1,7 @@
+R1a0  2 3 +v+v+h+h+h+h-v
+Ra9012 3 4 -v-v+v-h-h+v
+Rj6k 1 1 +v+v+v+h+h+h-v-v-v-h+h+h
+Rb9012 4 3 -v+v+v-h-h+v
+Rj6h 5 5 +v-v+v+h-h+h
+Rx2C 2 2 -v-h+v+h-v+h+v-h
+Rq12a 2 9 +v+v-h-h-h-h-h-h

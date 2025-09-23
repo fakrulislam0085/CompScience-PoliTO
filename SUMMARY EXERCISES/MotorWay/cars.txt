@@ -1,0 +1,7 @@
+FI245LE;Turin;Santhia;4/9/2024
+BY010TE;Turin;Milan;7/9/2024
+EX456OR;Carisio;Balocco;7/9/2024
+EX456OR;Rho;Santhia;8/9/2024
+BY010TE;Novara;Borgo d'Ale;9/11/2024
+TR472UE;Biandrate;Greggio;12/9/2024
+TR472UE;Milan;Turin;14/9/2024
