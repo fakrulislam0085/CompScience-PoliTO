@@ -3,6 +3,7 @@
 ## 📢 Welcome Note
 
 Welcome to **Lab 06** of the *Computer Science Laboratory* course at Politecnico di Torino. This lab focuses on building and applying **functions**, strengthening your skills in **string processing, mathematical modeling, and problem decomposition**. By the end, you’ll be comfortable writing reusable code blocks, applying formulas from real-world physics and engineering, and implementing classical problems such as Roman numeral conversion.
+> "The function of a good software engineer is to make the complex simple, not to make the simple complex." — Stephen Hawking
 
 ---
 
@@ -92,5 +93,6 @@ This lab is split into **two parts**:
 > 
 
 ---
+
 
 
