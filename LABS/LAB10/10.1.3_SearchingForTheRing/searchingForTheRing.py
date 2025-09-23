@@ -8,15 +8,19 @@ def searchTheWord(fileNames, sWord) :
         print()     # Print a newline before processing each file
         try : 
             with open(file, "r") as readFile: 
-                linesList = readFile.readlines()    # read the whole file into a list of lines 
+                linesList = readFile.readlines()    # Read the whole file into a list of lines 
 
                 for line in linesList : 
-                    if sWord.lower() in line.lower() :  # found the word
+                    if sWord.lower() in line.lower() :  # Found the word
                         print(f"{file}: {line.strip()}")
-                #print()     # print a newline after processing each file
+                print()     # Print a newline after processing each file
 
         except FileNotFoundError : 
             print(f"{file}: Not found\n")
-
+        except OSError : 
+            print("General I/O problems(e.g., disk issues)") 
+        except Exception as e :
+            print(f"An error occurred: {e}")
+            
 if __name__ == "__main__" : 
     main() 

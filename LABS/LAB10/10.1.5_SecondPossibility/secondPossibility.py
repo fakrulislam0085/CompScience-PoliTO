@@ -18,8 +18,7 @@ def main() :
             else : 
                 print("You have inputted a wrong value. Try again!")
 
-
-        # prompt the user for the next input
+        # Prompt the user for the next input
         userInput = input("Enter the value(float):")
 
     print(f"The sum of all the correctly inputted floating values: {floatSum}")
