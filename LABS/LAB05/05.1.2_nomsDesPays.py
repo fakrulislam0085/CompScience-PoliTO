@@ -13,7 +13,6 @@ def main() :
             
             country_name = input("Enter the country name: ")
 
-
     exception_musculine_singular = ['Belize', 'Cambodge', 'Mexique', 'Mozambique', 'Zaire', 'Zimbabwe']
     plural_exceptions = ['Etats-Unis', 'Pays-Bas'] 
 
@@ -30,7 +29,6 @@ def main() :
     # 'la' for feminine nouns [nouns end with 'e']
     elif country_name[len(country_name)-1] == 'e' :         # way-2 to access last char
         print(f"la {country_name}")
-
 
 if __name__ == "__main__" : 
     main() 

@@ -13,7 +13,6 @@ def main() :
 
 if __name__ == "__main__" : 
     main() 
-    
 
 # Python supports underscores in integer and float literals (e.g. 1_000_000, 3.14_15) since Python 3.6.
 

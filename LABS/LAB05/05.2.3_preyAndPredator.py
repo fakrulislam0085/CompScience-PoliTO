@@ -1,6 +1,4 @@
-
 def main() : 
-
     # As test inputs we can use: A=0.1, B=0.01, C=0.01, D=0.00002
     A = float(input("Enter the growth rate of prey- A: "))
     B = float(input("Enter the rate of destruction of prey by predators- B: "))

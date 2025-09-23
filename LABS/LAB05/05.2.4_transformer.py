@@ -1,5 +1,4 @@
 # We are not talking about Transformer Movie guys!
-
 R0 = 20     # ohm
 VS = 40     # Volt
 RS = 8      # ohm

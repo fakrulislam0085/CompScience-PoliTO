@@ -1,8 +1,10 @@
+# Expected correct PIN for validation
 CORRECT_PIN = 1234
 
 def main() : 
     attempts = 0 
 
+    # Loop until correct PIN or 3 failed attempts
     while True :
         try : 
             user_input = int(input("Enter your PIN: ")) 
