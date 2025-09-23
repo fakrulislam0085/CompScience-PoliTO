@@ -1,37 +1,41 @@
-import re 
+# Censor.py: replace words listed in `bad_words.txt` with asterisks
+# in `raw_text.txt` and write the censored output to `censored.txt`.
+INPUTFILE1 = "raw_text.txt"
+INPUTFILE2 = "bad_words.txt"
+OUTPUTFILE = "censored.txt" 
 
-def censored_text(fileName1, badWords, fileName3) : 
+def readFile() : 
+    badWordList = [] 
     try : 
-        with open(fileName1, "r") as inFile, open(fileName3, "w") as writeFile : 
-            readBlocks = inFile.read() 
-            tokens = re.findall(r'\w+|\W+', readBlocks) 
-
-            for word in tokens : 
-                if word.strip().isalnum() and word.lower() in badWords : 
-                    writeFile.write(len(word) * '*')
-                else : 
-                    writeFile.write(word)
-            print("File Processed Successfully!\n") 
-
+        with open(INPUTFILE2, 'r') as in_f2 : 
+            for word in in_f2 : 
+                word = word.strip() 
+                badWordList.append(word) 
     except FileNotFoundError : 
-        print(f"{fileName1} or {fileName3}: Not found.\n") 
+        print(f"Tried to open {INPUTFILE2}. File is not found.")
     
+    try : 
+        with open(INPUTFILE1, 'r') as in_f1, open(OUTPUTFILE, 'w') as wFile : 
+
+                for line in in_f1: 
+                    Words = line.split() 
+                    
+                    for word in Words : 
+                        if any(word.lower() == badWord.lower() for badWord in badWordList) :
+                            l = len(word) 
+                            # Now censor this badword 
+                            wFile.write('*' * l + ' ')
+                        else : 
+                            wFile.write(word + ' ') 
+                    wFile.write('\n') 
+
+        print("File processed successfully") 
+
+    except FileNotFoundError:
+        print(f"Tried to open {INPUTFILE1}. File is not found.")
 
 def main() : 
-    fileName1 = "raw_text.txt" 
-    fileName2 = "bad_words.txt" 
-    fileName3 = "censored.txt"
+    readFile() 
 
-    # Extract the bad words in a set 
-    try : 
-        with open(fileName2, "r") as readFile : 
-            badWords = readFile.read().split()
-            badWords = set(word.lower() for word in badWords) 
-
-    except FileNotFoundError : 
-        print(f"{fileName2}: Not found.\n") 
-
-    censored_text(fileName1, badWords, fileName3) 
-
-if __name__ == "__main__": 
+if __name__ == "__main__" : 
     main() 

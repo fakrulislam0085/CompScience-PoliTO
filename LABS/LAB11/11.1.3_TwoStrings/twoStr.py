@@ -1,3 +1,9 @@
+"""
+This script takes two user-input strings and performs set operations:
+1. Finds characters that appear in both strings.
+2. Finds characters that appear in only one of the strings.
+3. Finds alphabetical letters that do not appear in either string.
+"""
 def main() : 
     print("User Input:\n") 
     string1 = input("Enter the first string: ")

@@ -9,7 +9,7 @@ def count_words(readFile) :
             words = text.lower().split() 
 
             for word in words : 
-                # strip punctuation from each word 
+                # Strip punctuation from each word 
                 word = ''.join(char for char in word if char.isalnum())
 
                 if word :   # The word is not empty 

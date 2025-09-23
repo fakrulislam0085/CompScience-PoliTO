@@ -1,3 +1,10 @@
+"""SparseVectors: utility for summing sparse vectors represented as dicts.
+
+Each sparse vector is a dictionary mapping index -> value. The function
+`sparse_array_sum(a, b)` returns a new dictionary representing the element-wise
+sum of the two sparse vectors.
+"""
+
 def sparse_array_sum(a, b) : 
     resultDict = dict(a) 
 

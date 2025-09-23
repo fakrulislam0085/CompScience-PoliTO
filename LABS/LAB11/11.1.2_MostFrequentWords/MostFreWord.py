@@ -1,4 +1,8 @@
 def mostFreqWords(fileName) : 
+    """Count occurrences of each word in the given file.
+    Reads `fileName`, splits on whitespace, lowercases words,
+    and returns a dictionary mapping each word to its count.
+    """
     resultDic = dict()     
 
     try: 

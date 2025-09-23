@@ -1,7 +1,6 @@
 from math import sqrt, floor 
 
 def main() : 
-
     n = int(input("Enter a positive integer: ")) 
 
     primes = set(range(2, n+1)) 
