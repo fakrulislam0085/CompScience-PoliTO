@@ -24,7 +24,7 @@ def main() :
         previous = num 
         line = input("Enter a number: ") 
 
-    # If the entered sequence ends with duplicate numbers, the while loop won't print the value 
+    # If the entered sequence ends with duplicate numbers, the while loop won't print the valuee
     if duplicate : 
         print(f"Value {previous} is duplicated.")
 
