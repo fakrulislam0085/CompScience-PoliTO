@@ -59,118 +59,122 @@ Below are short, reliable steps. The official lab PDF also contains an installat
 
 ---
 
-### Type & Info
+### 🔹 Type & Info
 
-| Function | What it does | Example |
+| Function | Usage | Example |
 | --- | --- | --- |
-| `type(x)` | Return the type of object | `type(5)` → `<class 'int'>` |
-| `id(x)` | Unique id for object | `id("abc")` |
-| `dir(x)` | List attributes & methods | `dir([])` |
-| `help(obj)` | Open docstring/help | `help(str)` |
+| `type()` | Get type of object | `type(5)` → `<class 'int'>` |
+| `id()` | Get unique id of object | `id("abc")` |
+| `dir()` | List attributes/methods | `dir([])` |
+| `help()` | Get documentation | `help(str)` |
 
 ---
 
-### Input & Output
+### 🔹 Input & Output
 
-| Function | Example |
-| --- | --- |
-| `print()` | `print("Hello")` |
-| `input()` | `name = input("Name: ")` |
-
----
-
-### Numbers & Math
-
-| Function | Example |
-| --- | --- |
-| `abs(x)` | `abs(-7)` → `7` |
-| `pow(x,y)` | `pow(2,3)` → `8` |
-| `round(x, n)` | `round(3.1416,2)` → `3.14` |
-| `min()/max()` | `max([1,2,3])` → `3` |
-| `sum(iterable)` | `sum([1,2,3])` → `6` |
-| `divmod(a,b)` | `divmod(7,3)` → `(2, 1)` |
-
----
-
-### Sequences (list / tuple / string)
-
-| Function | Example |
-| --- | --- |
-| `len(x)` | `len("hello")` → `5` |
-| `sorted(iterable)` | `sorted([3,1,2])` → `[1,2,3]` |
-| `reversed(seq)` | `list(reversed([1,2,3]))` → `[3,2,1]` |
-| `enumerate(iter)` | `list(enumerate(['a','b']))` → `[(0,'a'),(1,'b')]` |
-| `zip(a,b)` | `list(zip([1,2],[3,4]))` → `[(1,3),(2,4)]` |
-| `all(iter)` | `all([True,1])` → `True` |
-| `any(iter)` | `any([0, False, 5])` → `True` |
-
----
-
-### Conversions
-
-| Function | Example |
-| --- | --- |
-| `int()/float()/str()` | `int("7")` → `7` |
-| `list()/tuple()/set()` | `list("abc")` → `['a','b','c']` |
-| `dict()` | `dict(a=1, b=2)` → `{'a':1,'b':2}` |
-| `bin()/oct()/hex()` | `bin(10)` → `'0b1010'` |
-
----
-
-### Iterators & Functional Tools
-
-| Function | Example |
-| --- | --- |
-| `map(func,iter)` | `list(map(str,[1,2]))` → `['1','2']` |
-| `filter(func,iter)` | `list(filter(lambda x: x>2,[1,2,3,4]))` → `[3,4]` |
-| `functools.reduce()` | `reduce(lambda x,y: x+y,[1,2,3])` → `6` (import from `functools`) |
-| `range(start,stop,step)` | `list(range(1,5))` → `[1,2,3,4]` |
-
----
-
-### Object & Utility
-
-| Function | Example |
-| --- | --- |
-| `isinstance(obj, type)` | `isinstance(5,int)` → `True` |
-| `callable(obj)` | `callable(print)` → `True` |
-| `hash(x)` | `hash("hello")` |
-| `eval()` | `eval("2+3")` → `5` *(use carefully)* |
-| `exec()` | `exec("x=5; print(x)")` *(use carefully)* |
-| `globals()/locals()` | Inspect namespace dicts |
-
----
-
-### 🔠 String Character Tests
-
-| Method | Returns True if... | Example |
+| Function | Usage | Example |
 | --- | --- | --- |
-| `s.isalpha()` | all letters | `"abc".isalpha()` → `True` |
-| `s.isdigit()` | all digits | `"123".isdigit()` → `True` |
-| `s.isalnum()` | letters or digits | `"a1".isalnum()` → `True` |
-| `s.isspace()` | spaces/tabs/newlines | `" ".isspace()` → `True` |
-| `s.islower()` | all lower | `"hello".islower()` → `True` |
-| `s.isupper()` | all upper | `"HELLO".isupper()` → `True` |
-| `s.istitle()` | title case | `"Hello World".istitle()` → `True` |
-| `s.isnumeric()` | numeric (unicode) | `"²".isnumeric()` → `True` |
-| `s.isdecimal()` | decimal digits only | `"123".isdecimal()` → `True` |
+| `print()` | Display output | `print("Hello")` |
+| `input()` | Take user input | `name = input()` |
 
 ---
 
-### Other Handy String Methods
+### 🔹 Numbers & Math
+
+| Function | Usage | Example |
+| --- | --- | --- |
+| `abs()` | Absolute value | `abs(-7)` → `7` |
+| `pow(x, y)` | Power | `pow(2, 3)` → `8` |
+| `round()` | Round number | `round(3.1416, 2)` → `3.14` |
+| `min()`, `max()` | Smallest / largest | `max([1, 2, 3])` → `3` |
+| `sum()` | Sum of iterables | `sum([1,2,3])` → `6` |
+| `divmod()` | Quotient & remainder | `divmod(7, 3)` → `(2,1)` |
+
+---
+
+### 🔹 Sequences (List, Tuple, String)
+
+| Function | Usage | Example |
+| --- | --- | --- |
+| `len()` | Length | `len("hello")` → `5` |
+| `sorted()` | Return sorted list | `sorted([3,1,2])` → `[1,2,3]` |
+| `reversed()` | Reverse iterator | `list(reversed([1,2,3]))` → `[3,2,1]` |
+| `enumerate()` | Index + value | `list(enumerate(['a','b']))` → `[(0,'a'), (1,'b')]` |
+| `zip()` | Pair elements | `list(zip([1,2],[3,4]))` → `[(1,3),(2,4)]` |
+| `all()` | True if all are True | `all([True,1,3])` → `True` |
+| `any()` | True if any True | `any([0, False, 5])` → `True` |
+
+---
+
+### 🔹 Conversions
+
+| Function | Usage | Example |
+| --- | --- | --- |
+| `int()`, `float()`, `str()` | Type casting | `int("7")` → `7` |
+| `list()`, `tuple()`, `set()` | Convert between types | `list("abc")` → `['a','b','c']` |
+| `dict()` | Create dictionary | `dict(a=1, b=2)` → `{'a':1, 'b':2}` |
+| `bin()`, `oct()`, `hex()` | Number base | `bin(10)` → `'0b1010'` |
+
+---
+
+### 🔹 Iterators & Functional
+
+| Function | Usage | Example |
+| --- | --- | --- |
+| `map()` | Apply function to iterable | `list(map(str, [1,2,3]))` → `['1','2','3']` |
+| `filter()` | Filter items | `list(filter(lambda x: x>2, [1,2,3,4]))` → `[3,4]` |
+| `reduce()`* (from `functools`) | Reduce iterable | `reduce(lambda x,y: x+y, [1,2,3])` → `6` |
+| `range()` | Sequence generator | `list(range(1,5))` → `[1,2,3,4]` |
+
+---
+
+### 🔹 Object & Utility
+
+| Function | Usage | Example |
+| --- | --- | --- |
+| `isinstance()` | Check type | `isinstance(5, int)` → `True` |
+| `callable()` | Is callable? | `callable(print)` → `True` |
+| `hash()` | Hash value | `hash("hello")` |
+| `eval()` | Evaluate string as Python | `eval("2+3")` → `5` |
+| `exec()` | Execute Python code | `exec("x=5; print(x)")` |
+| `globals()` / `locals()` | Namespace dict | `globals()` |
+
+---
+
+### 🔠 Python String Methods (Character Checks)
+
+| Method | Returns `True` if… | Example |
+| --- | --- | --- |
+| `s.isalpha()` | all characters are **letters** | `"abc".isalpha()` → `True` |
+| `s.isdigit()` | all characters are **digits** | `"123".isdigit()` → `True` |
+| `s.isalnum()` | all characters are **letters or digits** | `"abc123".isalnum()` → `True` |
+| `s.isspace()` | all characters are **whitespace** (`' '`, `\t`, `\n`) | `"   ".isspace()` → `True` |
+| `s.islower()` | all cased chars are **lowercase** | `"hello".islower()` → `True` |
+| `s.isupper()` | all cased chars are **uppercase** | `"HELLO".isupper()` → `True` |
+| `s.istitle()` | string is **Title Case** | `"Hello World".istitle()` → `True` |
+| `s.isnumeric()` | numeric chars only (includes some unicode numbers) | `"²".isnumeric()` → `True` |
+| `s.isdecimal()` | only decimal digits (0–9) | `"123".isdecimal()` → `True` |
+
+---
+
+### 🛠 Other Handy String Methods
 
 | Method | What it does | Example |
 | --- | --- | --- |
-| `s.lower()` / `s.upper()` | case change | `"HeLLo".lower()` → `"hello"` |
-| `s.title()` | titlecase | `"hello world".title()` → `"Hello World"` |
-| `s.capitalize()` | first letter upper | `"python".capitalize()` → `"Python"` |
-| `s.strip()` / `lstrip()` / `rstrip()` | trim whitespace | `" hi ".strip()` → `"hi"` |
-| `s.startswith(pref)` / `s.endswith(suf)` | prefix/suffix test | `"python".startswith("py")` → `True` |
-| `s.find(x)` / `s.index(x)` | index or `-1` / raises | `"hello".find("l")` → `2` |
-| `s.count(x)` | occurrences | `"banana".count("a")` → `3` |
-| `s.replace(a,b)` | replace substrings | `"hello".replace("l","x")` → `"hexxo"` |
-| `s.split(sep=None)` | split to list | `"a b c".split()` → `['a','b','c']` |
-| `sep.join(list)` | join list to string | `".".join(['a','b'])` → `"a.b"` |
+| `s.lower()` | make lowercase | `"HeLLo".lower()` → `"hello"` |
+| `s.upper()` | make uppercase | `"HeLLo".upper()` → `"HELLO"` |
+| `s.title()` | title case | `"hello world".title()` → `"Hello World"` |
+| `s.capitalize()` | capitalize first letter | `"python".capitalize()` → `"Python"` |
+| `s.strip()` | remove whitespace (or chars) from both ends | `"  hi  ".strip()` → `"hi"` |
+| `s.lstrip()` / `s.rstrip()` | remove left/right spaces | `"   hi".lstrip()` → `"hi"` |
+| `s.startswith(x)` | check prefix | `"python".startswith("py")` → `True` |
+| `s.endswith(x)` | check suffix | `"python".endswith("on")` → `True` |
+| `s.find(x)` | index of first occurrence (or `-1`) | `"hello".find("l")` → `2` |
+| `s.index(x)` | like `find()` but raises error if not found | `"hello".index("l")` → `2` |
+| `s.count(x)` | count occurrences | `"banana".count("a")` → `3` |
+| `s.replace(a, b)` | replace substring | `"hello".replace("l", "x")` → `"hexxo"` |
+| `s.split()` | split into list | `"a b c".split()` → `['a','b','c']` |
+| `s.join(list)` | join list into string | `".".join(['a','b','c'])` → `"a.b.c"` |
 
 ---
 

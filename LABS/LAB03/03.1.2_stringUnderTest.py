@@ -23,7 +23,6 @@ def main() :
     if user_input.endswith('.') : 
         print(f"VII. It ends with a point.")
 
-
 if __name__ == "__main__" : 
     main() 
 
