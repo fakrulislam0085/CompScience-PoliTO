@@ -1,7 +1,7 @@
 # 🧪 Lab 02: Python Basics & String Manipulation
 
 Welcome to **Lab 02** of the *Computer Science* course for First-Year, First-Semester students at Politecnico di Torino. This lab is all about building **foundational Python skills** — from arithmetic to string tricks, wrapped in real-world logic and fun formatting challenges.
-
+>"First, solve the problem. Then, write the code." — John Johnson (Pioneering computer scientist and writer)
 ---
 
 ## 📚 Topics Covered
