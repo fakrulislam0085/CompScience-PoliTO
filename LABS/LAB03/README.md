@@ -2,6 +2,7 @@
 
 Welcome to **Lab 03** of the *Computer Science* course for First-Year, First-Semester students at Politecnico di Torino. This lab goes deeper into **logical reasoning**, **decision making**, and **Python control structures** — preparing you for real-world programming scenarios where clean decisions matter.
 
+>"The most important property of a program is whether it accomplishes the intention of its user." — C.A.R. Hoare (Computer scientist)
 ---
 
 ## 📚 Topics Covered
@@ -172,5 +173,6 @@ Each exercise lives in its own `.py` file. Great for clarity, testing, and futur
 Go crush it, clean coder. 💥
 
 Happy coding! 🧠💻
+
 
 
