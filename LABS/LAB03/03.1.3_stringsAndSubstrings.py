@@ -18,6 +18,5 @@ def main() :
     else: 
         print("I. The 'long sequence' does not contain the 'short sequence'.")
 
-
 if __name__ == "__main__" :
     main() 

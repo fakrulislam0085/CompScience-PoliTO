@@ -1,3 +1,4 @@
+# Calculates the shopping voucher amount based on spending tiers
 def voucher_calculator(x) : 
     if x < 10 : 
         voucher = 0.0

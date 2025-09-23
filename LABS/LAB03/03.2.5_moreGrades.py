@@ -12,7 +12,6 @@ F = 0.0
 2.80 = B- 
 '''
 def convert_to_letter_grade(num_grade) : 
-
     if 3.85 <= num_grade <= 4.0 : 
         return 'A' 
     elif 3.50 <= num_grade < 3.85 : 

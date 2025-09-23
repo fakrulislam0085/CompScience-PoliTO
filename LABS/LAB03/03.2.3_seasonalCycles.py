@@ -1,4 +1,5 @@
 def seasonTracker(d, m) : 
+    # Determine the base season from the month number
     if m in (1, 2, 3) :     # Tuple
         season = "WINTER"   
     elif m in (4, 5, 6) : 
@@ -8,6 +9,7 @@ def seasonTracker(d, m) :
     elif m in (10, 11, 12) : 
         season = "FALL" 
     
+    # On the 21st (or later) of boundary months (Mar, Jun, Sep, Dec) advance season
     if m%3 == 0 and d>=21 : 
         if season == "WINTER" : 
             season = "SPRING" 
@@ -18,6 +20,7 @@ def seasonTracker(d, m) :
         else : 
             season = "WINTER"
 
+    # Display the computed season for the provided date
     print(f"The {d} number day of {m} number month is on {season} season!")    
 
 def main() : 

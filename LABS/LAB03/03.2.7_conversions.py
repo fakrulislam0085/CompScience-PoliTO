@@ -40,7 +40,6 @@ def main() :
     print("Conversion results:")
     print(f"{value} {from_unit} = {converted:.2f} {to_unit}")
 
-
 if __name__ == "__main__" : 
     main() 
 

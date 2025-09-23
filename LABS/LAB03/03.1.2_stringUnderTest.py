@@ -27,6 +27,6 @@ if __name__ == "__main__" :
     main() 
 
 
-# Remember, the difference is:
-#   - All alphabetical characters are uppercase => .isupper()
-#   - All characters are alphabetical and uppercase => .isalpha() and .isupper()
+# Note:
+#   - .isupper() returns True if all cased characters in the string are uppercase and there is at least one cased character.
+#   - .isalpha() and .isupper() together ensure all characters are letters and all are uppercase.

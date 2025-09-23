@@ -1,7 +1,6 @@
 def taxCalculator(income, status) : 
-    
     if status == "UNMARRIED" : 
-        # ❌If income in (0, 8000) -> This is a common mistake for a range check. To check a value in a range, use 'range()'
+        #If income in (0, 8000) -> This is a common mistake for a range check. To check a value in a range, use 'range()'
         if 0 <= income < 8000 : 
             tax = income * 10/100 
         elif 8000 <= income < 32000 : 

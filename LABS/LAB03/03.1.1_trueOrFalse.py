@@ -41,6 +41,5 @@ def main() :
         ans = False
         print(f"Comparison V is {ans}")
 
-
 if __name__ == "__main__" : 
     main() 
