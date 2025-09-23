@@ -1,6 +1,6 @@
 # Computer Science Laboratory #7
 
-> "Talk is cheap. Show me the code." — Linus Torvalds (Creator of Linux)
+> "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." — John Woods (Programmer)
 > 
 
 ---
@@ -118,3 +118,4 @@ LABS/
 ---
 
 ✨ *Good code is not just about solving problems — it’s about solving them with clarity, simplicity, and a touch of elegance.*
+
