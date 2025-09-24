@@ -1,0 +1,54 @@
+Lily Briscoe is creating a painting but isn’t sure where to place the different elements for the best result. To help her, you need to write a Python program that can compose an image starting from smaller ones.
+
+All images are represented by text files, where each character corresponds to a pixel.
+
+The program must read the file input.txt, which contains, one per line, the names of the input image files followed by two numbers separated by a space, indicating where the image from the file should be inserted in the final image. The position refers to the row and column of the final image where the top-left corner of the input image will be placed. The top-left pixel of the final image has coordinates 0, 0.
+
+Inside the input images, the numbers from 0 (black) to 9 (white) refer to grayscale values, while the symbol X indicates a transparent pixel.
+
+The final image must be printed to the console and must contain 10 rows and 10 columns. All pixels in the final image are initially white (initialized to 9).
+
+When performing the operations, follow these guidelines:
+
+The images must be pasted in the order they appear in the input file.
+Each time an image is pasted, it overwrites previous ones in any overlapping regions.
+Pixels that are never overwritten must remain white (9).
+Transparent pixels in the input images (X) do not overwrite previous pixels.
+You can assume that the copy-and-paste operations never go out of bounds of the 10x10 result (therefore: there’s no need to check pixel coordinates, which will always be valid).
+Before printing the final image, print:
+
+the number of input image files
+the name of the image file that contains the biggest input image (including transparent pixels)
+the name of the darkest image, where the intensity of an image is calculated as the average value of its pixels (excluding transparent ones), and its intensity value with two decimal digits (note: the darkest image has the lowest intensity among all images)
+Example
+input.txt
+
+img1.txt 2 1
+img2.txt 3 0
+img1.txt
+
+XX34X
+X344X
+34543
+img2.txt
+
+888888
+8XXXX8
+8XXXX8
+888888
+Output
+
+Number of input image files: 2
+Largest image: img2.txt
+Darkest image: img1.txt 3.70
+
+9999999999
+9999999999
+9993499999
+8888889999
+8345489999
+8999989999
+8888889999
+9999999999
+9999999999
+9999999999

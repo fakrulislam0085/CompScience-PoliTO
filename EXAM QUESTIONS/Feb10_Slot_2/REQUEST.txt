@@ -1,0 +1,35 @@
+Write a program that computes the results of multiple mathematical expressions, written in a file.
+
+The program must support three operators: add (+), subtract (-), and multiply (*). It must read the expressions from the input file, calculate their value, and print the results on screen. 
+
+Each line in the input file represents a single expression in the following format: the sequence of operands, separated by spaces, followed by the sequence of operators, also separated by spaces. The two sequences are instead separated by a colon character (:).
+
+The program must always evaluate operators left-to-right, not according to the standard precedence rules.
+
+The format of the file can be assumed correct. You can also assume that each expression contains at least two operands and one operator. Other than that, the number of lines and their size is unknown.
+
+An example of input file is reported below:
+
+10 19 : +
+381 40 27 : - * 
+76 8 1 6 15 : - * + *
+
+For this example, the program should produce as output:
+
+29
+9207
+1110
+
+because:
+
+    10 + 19 = 29
+    381 - 40 = 341 and 341 * 27 = 9207
+    76 - 8 = 68, 68 * 1 = 68, 68 + 6 = 74, and 74 * 15 = 1110
+
+In general, for an input line such as:
+
+A B C D :  o1 o2 o3
+
+The program must compute:
+
+(((A o1 B) o2 C) o3 D)
