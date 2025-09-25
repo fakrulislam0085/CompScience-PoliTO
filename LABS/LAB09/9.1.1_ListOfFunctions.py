@@ -1,6 +1,3 @@
-
-
-
 # funcitons 
 # try-except block o
 # list-comprehension 
