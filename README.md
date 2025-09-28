@@ -119,6 +119,8 @@ This repository is licensed under the **MIT License**.
 As this repo is student-maintained, it may contain mistakes. Always cross-check with official materials.
 Feel free to use and share these resources for educational purposes.
 
+Check out Advent of Code(https://adventofcode.com/) by Eric Wastl.
+
 > *"Keep coding. Keep growing. And don’t forget to smile while debugging."*
 
 ---
