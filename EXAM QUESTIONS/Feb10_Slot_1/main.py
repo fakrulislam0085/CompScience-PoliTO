@@ -1,5 +1,4 @@
 def getTheAnswer(file, file2) : 
-
     with open(file, 'r') as f1, open(file2, 'w') as f2 : 
         totalLines = 0 
         correctLines = 0 
