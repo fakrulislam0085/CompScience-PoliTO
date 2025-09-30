@@ -4,7 +4,6 @@ def main() :
     if x = 3.0 : 
         s == 'three dot zero' 
     print(s) 
-    
 
     # This code contains multiple syntax errors. If you want to run this code, don't forget to comment the wrong code. 
     # Now let's fix all of the errors! 
