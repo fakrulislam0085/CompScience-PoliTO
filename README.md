@@ -1,4 +1,5 @@
-> “If you want to pass CS at PoliTO without crying, this is your cheat code. Period.” 😎
+> “If you want to pass CS at PoliTO without crying, this is your cheat code. Period.”😎
+> "I did the CS exam twice, first time I got 28/30, and second time 27/30. Don't do it second time!!!"
 
 # 📚 Welcome to the CompScience-PoliTO Repository!
 
