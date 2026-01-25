@@ -54,7 +54,6 @@ def match() :
         # Update the words 
         initialWord = newWord 
         wordsList.append(newWord)
-
         
 if __name__ == "__main__" : 
     main() 

@@ -17,14 +17,12 @@ def flood_map(heights, water_level):
     
     return flood
 
-
 def print_flood_map(flood):
     """
     Nicely prints the flood map row by row.
     """
     for row in flood:
         print(''.join(row))  # Join the row into a single string and print
-
 
 def main():
     """
@@ -68,7 +66,6 @@ def main():
         print(f"\nWater level: {water_level:.2f} m")
         flood = flood_map(heights, water_level)
         print_flood_map(flood)
-
 
 # 🔥 Run it
 main()

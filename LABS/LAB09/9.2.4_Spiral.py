@@ -62,6 +62,5 @@ def main() :
     table = spiralTable(table, n)   
     printTheSpiralTable(table, n) 
 
-
 if __name__ == "__main__" :
     main() 

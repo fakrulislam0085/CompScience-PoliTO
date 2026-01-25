@@ -41,7 +41,6 @@ def main() :
             except ValueError : 
                 print("Please Enter a real Number🥴") 
                 continue
-
         
     discount(prices, is_pet) 
 

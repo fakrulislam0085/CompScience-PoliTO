@@ -62,7 +62,6 @@ def main() :
         for col in range(len(priceTable[row])):
             print(f"{priceTable[row][col]:3d}", end="")
         print()
-        
 
     
 if __name__ == "__main__" : 

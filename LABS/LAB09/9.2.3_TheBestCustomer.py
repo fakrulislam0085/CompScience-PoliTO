@@ -35,9 +35,7 @@ def main() :
 
     # after each acquisition print the best customer name 
     bestMan = name_of_best_customer(sales, names) 
-    print(f"\n\nThe best customer for the day is {bestMan.upper()}\n")
-
-        
+    print(f"\n\nThe best customer for the day is {bestMan.upper()}\n")   
     
 if __name__ == "__main__" : 
     main()
