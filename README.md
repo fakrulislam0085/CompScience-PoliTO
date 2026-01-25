@@ -1,4 +1,6 @@
-> “If you want to pass CS at PoliTO without crying, this is your cheat code. Period.” 😎
+> “If you want to pass CS at PoliTO without crying, this is your cheat code. Period.”😎
+
+> "I did the CS exam twice, first time I got 28/30, and second time 27/30. Kill it in your first attempt!!!"
 
 # 📚 Welcome to the CompScience-PoliTO Repository!
 
@@ -116,7 +118,10 @@ Feel free to submit a pull request or contact me!
 ## 📜 License
 
 This repository is licensed under the **MIT License**.  
+As this repo is student-maintained, it may contain mistakes. Always cross-check with official materials.
 Feel free to use and share these resources for educational purposes.
+
+Check out Advent of Code(https://adventofcode.com/) by Eric Wastl.
 
 > *"Keep coding. Keep growing. And don’t forget to smile while debugging."*
 
